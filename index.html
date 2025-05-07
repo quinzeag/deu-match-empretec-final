@@ -26,41 +26,8 @@
                     <th>Quase Match (3 pontos)</th>
                     <th>No Match (0 pontos)</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Quando encontro um obstáculo complicado no meu negócio:</td>
-                    <td><input type="radio" name="q1" value="5"></td>
-                    <td><input type="radio" name="q1" value="3"></td>
-                    <td><input type="radio" name="q1" value="0"></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Ao ouvir críticas duras sobre minha startup:</td>
-                    <td><input type="radio" name="q2" value="5"></td>
-                    <td><input type="radio" name="q2" value="3"></td>
-                    <td><input type="radio" name="q2" value="0"></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ao perceber uma oportunidade inesperada:</td>
-                    <td><input type="radio" name="q3" value="5"></td>
-                    <td><input type="radio" name="q3" value="3"></td>
-                    <td><input type="radio" name="q3" value="0"></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Na hora de decidir sobre um novo investimento:</td>
-                    <td><input type="radio" name="q4" value="5"></td>
-                    <td><input type="radio" name="q4" value="3"></td>
-                    <td><input type="radio" name="q4" value="0"></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Quando penso em inovação para minha startup:</td>
-                    <td><input type="radio" name="q5" value="5"></td>
-                    <td><input type="radio" name="q5" value="3"></td>
-                    <td><input type="radio" name="q5" value="0"></td>
-                </tr>
+                <!-- Perguntas Dinâmicas -->
+                <tbody id="question-list"></tbody>
             </table>
             <button onclick="calculateScore()">CALCULAR</button>
             <div id="result"></div>
@@ -68,7 +35,17 @@
     </main>
 
     <footer>
-        <p>© 2025 Deu Match Empretec - Sebrae/PB</p>
+        <div class="footer-content">
+            <p>Av. Maranhão, 983 - Estados, João Pessoa - PB, 58030-261 - Central de Relacionamento Sebrae: 0800 570 0800</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/sebraeparaiba/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sebraeparaiba" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/sebraeparaiba/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/sebraeparaiba" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com/sebraeparaiba" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/sebraeparaiba" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
