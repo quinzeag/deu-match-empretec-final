@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Deu Match Empretec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-banner">
+            <h2>Resultado da Avaliação</h2>
+        </div>
+    </header>
+    <main>
+        <section class="quiz">
+            <h2>Sua Nota: <span id="nota" style="color: #FFD700;"></span></h2>
+            <p id="mensagem"></p>
+            <form>
+                <input type="text" placeholder="Nome" required><br>
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="text" placeholder="Empresa" required><br>
+                <input type="tel" placeholder="Whatsapp" required><br>
+                <input type="submit" value="Enviar Pré-inscrição">
+            </form>
+            <button onclick="window.history.back()">Voltar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="https://certificados.rr.sebrae.com.br/img/logo_sebrae.png" alt="Sebrae">
+        </div>
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nota = urlParams.get('nota');
+        const mensagem = urlParams.get('mensagem');
+        document.getElementById('nota').textContent = nota;
+        document.getElementById('mensagem').textContent = mensagem;
+    </script>
+</body>
+</html>
