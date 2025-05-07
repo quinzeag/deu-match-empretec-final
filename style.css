@@ -139,4 +139,20 @@ button:hover {
     max-width: 100%;
     object-fit: contain;
 }
+.top-right-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #002d62; /* Azul escuro */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.top-right-logo img {
+    height: 50px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 
