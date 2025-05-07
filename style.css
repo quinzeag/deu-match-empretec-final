@@ -269,5 +269,85 @@ button:hover {
     max-width: 100%;
     object-fit: contain;
 }
+/* Ajuste para garantir espaço após o cabeçalho fixo */
+body {
+    margin: 0;
+    padding-top: 160px; /* Espaço suficiente para o topo */
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.top-banner {
+    background-color: #002d62;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-img {
+    height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Ajuste da tabela para ocupar a área restante */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: transparent;
+    color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+th {
+    background-color: #003366;
+    font-weight: 600;
+}
+
+td:nth-child(2) {
+    background-color: #002244;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #001f3f;
+}
+
+tr:hover {
+    background-color: #003366;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 
 
