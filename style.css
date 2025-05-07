@@ -507,5 +507,30 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+/* Topo centralizado com logos lado a lado */
+.top-banner {
+    background-color: #002d62; /* Azul escuro */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    gap: 20px; /* Espaço entre as logos */
+    align-items: center;
+}
+
+.logo-img {
+    height: 120px; /* Altura fixa para manter proporção */
+    max-width: 100%;
+    object-fit: contain;
+}
 
 
