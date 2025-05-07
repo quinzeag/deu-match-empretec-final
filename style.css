@@ -753,5 +753,123 @@ footer {
     margin: 5px;
     font-size: 1.5rem;
 }
+/* Fonte global Helvetica */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-image: url('https://img.freepik.com/fotos-gratis/luzes-de-neon-gradientes-abstratas_23-2149279137.jpg?semt=ais_hybrid&w=740');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Cabeçalho centralizado e com botão de inscrição */
+.top-banner {
+    background-color: #002d62;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+#inscreva-se {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#inscreva-se:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela colada no topo e transparente */
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 90%;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 12px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #004080;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+tr:hover {
+    background-color: #004080;
+}
+
+/* Botão Calcular - Visual Moderno */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Exibição da pontuação no final */
+#result {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+}
+
+/* Rodapé estilizado */
+footer {
+    background-color: #8b007b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    color: #ffccff;
+    margin: 5px;
+    font-size: 1.5rem;
+}
 
 
