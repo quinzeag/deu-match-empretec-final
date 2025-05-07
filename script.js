@@ -85,7 +85,7 @@ function calculateScore() {
     popup.id = "popup";
     popup.innerHTML = `
         <p>${message}</p>
-        <button onclick="window.location.href='https://www.sebrae.com.br'">Inscrever-se no Empretec Startup</button>`;
+        <button onclick="window.location.href='https://sebrae.com.br/sites/PortalSebrae/ufs/pb?codUf=16'">Inscrever-se no Empretec para Startups</button>`;
     document.body.appendChild(popup);
     popup.style.display = "block";
 
