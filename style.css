@@ -1,52 +1,63 @@
-footer {
-    background-color: #8b007b;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #001f3f, #005bb5);
     color: #fff;
-    padding: 20px;
-    margin-top: 20px;
     text-align: center;
 }
 
-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+    padding: 20px;
+    background-color: #000b33;
 }
 
-footer .sebrae-logo {
-    max-width: 150px;
-    margin: 10px;
-}
-
-footer .social-media {
-    display: flex;
-    gap: 15px;
+h1 {
     margin: 10px 0;
 }
 
-footer .social-media a {
-    color: #00e5ff;
-    text-decoration: none;
-    font-size: 2rem;
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #1c1f3a;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-footer .social-media a:hover {
-    color: #ff00ff;
+th, td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
 }
 
-footer p {
-    margin: 5px 0;
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    footer .social-media a {
-        font-size: 1.5rem;
-    }
-
-    footer .sebrae-logo {
-        max-width: 100px;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
+button:hover {
+    background-color: #0056b3;
 }
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1c1f3a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#popup button {
+    margin-top: 10px;
+    background-color: #00aaff;
+}
+
