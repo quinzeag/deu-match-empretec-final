@@ -154,5 +154,29 @@ button:hover {
     max-width: 100%;
     object-fit: contain;
 }
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #002d62; /* Azul escuro */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo-left, .logo-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 
