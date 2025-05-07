@@ -7,10 +7,39 @@
 </head>
 <body>
     <header>
-        <h1>Deu Match Empretec</h1>
-        <p>Avalie seu perfil empreendedor!</p>
+        <div class="logo">
+            <h1>💡 Deu Match Empretec</h1>
+            <p>Avalie seu perfil empreendedor!</p>
+        </div>
     </header>
+    
+    <main>
+        <section class="content">
+            <h2>Teste de Perfil Empreendedor</h2>
+            <button id="start-test">Iniciar Teste</button>
+
+            <div id="quiz" class="hidden">
+                <p>Qual é o estágio atual da sua startup?</p>
+                <select id="question1">
+                    <option value="0">Ideação</option>
+                    <option value="1">Validação de mercado</option>
+                    <option value="2">Tração</option>
+                    <option value="3">Escala</option>
+                </select>
+                <button onclick="calculateScore()">Enviar</button>
+            </div>
+
+            <div id="result" class="hidden">
+                <h3>Resultado:</h3>
+                <p id="score"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Deu Match Empretec - Todos os direitos reservados</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-
