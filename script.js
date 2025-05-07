@@ -81,13 +81,30 @@ function calculateScore() {
         message = "Perfil em desenvolvimento. O Empretec pode ajudar a avançar!";
     }
 
-    const popup = document.createElement("div");
-    popup.id = "popup";
-    popup.innerHTML = `
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = `
+        <p>Nota: <span style="font-size: 2rem; color: #FFD700;">${score}</span></p>
         <p>${message}</p>
         <button onclick="window.location.href='https://sebrae.com.br/sites/PortalSebrae/ufs/pb?codUf=16'">Inscrever-se no Empretec para Startups</button>`;
-    document.body.appendChild(popup);
-    popup.style.display = "block";
-
-    createConfetti();
 }
+window.onload = function() {
+    const questionList = document.getElementById("question-list");
+    if (!questionList) {
+        console.error("Elemento 'question-list' não encontrado.");
+        return;
+    }
+
+    questions.forEach((question, index) => {
+        const row = `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${question}</td>
+                <td><input type="radio" name="q${index}" value="5"> ${match[index]}</td>
+                <td><input type="radio" name="q${index}" value="3"> ${quaseMatch[index]}</td>
+                <td><input type="radio" name="q${index}" value="0"> ${noMatch[index]}</td>
+                <td class="score-cell" id="score${index}">0</td>
+            </tr>`;
+        questionList.innerHTML += row;
+    });
+};
+

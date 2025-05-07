@@ -384,19 +384,19 @@ body {
     object-fit: contain;
 }
 
-/* Tabela estilizada */
+/* Tabela estilizada sem contorno */
 table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 90%;
     background-color: transparent;
     color: #fff;
+    font-size: 0.9rem;
 }
 
 th, td {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    border: 1px solid #555;
 }
 
 th {
@@ -406,11 +406,35 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #001f3f;
+    background-color: #002244;
 }
 
 tr:hover {
     background-color: #003366;
+}
+
+/* Botão de cálculo */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Exibição da pontuação no final */
+#result {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
 }
 
 button {
