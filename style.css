@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #001f3f, #005bb5);
+    background: #1e3a8a;
     color: #fff;
     text-align: center;
 }
@@ -17,10 +17,9 @@ h1 {
 table {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 80%;
-    background-color: #1c1f3a;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 90%;
+    background-color: #f0f4ff;
+    color: #000;
 }
 
 th, td {
@@ -56,8 +55,14 @@ button:hover {
     text-align: center;
 }
 
-#popup button {
-    margin-top: 10px;
-    background-color: #00aaff;
+footer {
+    background-color: #8b007b;
+    color: #fff;
+    padding: 20px;
 }
 
+.social-media a {
+    color: #00e5ff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
