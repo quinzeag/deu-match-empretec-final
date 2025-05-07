@@ -653,5 +653,105 @@ footer {
     margin: 5px;
     font-size: 1.5rem;
 }
+/* Fundo da página com imagem */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://img.freepik.com/fotos-gratis/luzes-de-neon-gradientes-abstratas_23-2149279137.jpg?semt=ais_hybrid&w=740');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Cabeçalho leve e sem barra azul */
+.top-banner {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contêiner central para logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+/* Tabela moderna com cantos arredondados */
+table {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 90%;
+    background-color: rgba(0, 102, 204, 0.8); /* Azul claro transparente */
+    border-radius: 12px;
+    overflow: hidden;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0056b3;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 102, 204, 0.6);
+}
+
+tr:hover {
+    background-color: #007bff;
+}
+
+/* Botão Calcular - Visual Moderno */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Exibição da pontuação no final */
+#result {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+}
+
+/* Rodapé estilizado */
+footer {
+    background-color: #8b007b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    color: #ffccff;
+    margin: 5px;
+    font-size: 1.5rem;
+}
 
 
