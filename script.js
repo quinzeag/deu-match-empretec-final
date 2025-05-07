@@ -107,4 +107,26 @@ window.onload = function() {
         questionList.innerHTML += row;
     });
 };
+function calculateScore() {
+    let score = 0;
+    for (let i = 0; i < 10; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) score += parseInt(selected.value);
+    }
+
+    let message = "";
+    if (score >= 40) {
+        message = "Parabéns! Seu perfil é altamente compatível com o Empretec para Startups!";
+    } else if (score >= 20) {
+        message = "Você está no caminho certo! O Empretec pode ajudar a consolidar!";
+    } else {
+        message = "Perfil em desenvolvimento. O Empretec pode ajudar a avançar!";
+    }
+
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = `
+        <p>Sua Nota: <span style="font-size: 2rem; color: #FFD700;">${score}</span></p>
+        <p>${message}</p>
+        <button onclick="window.location.href='https://sebrae.com.br/sites/PortalSebrae/ufs/pb?codUf=16'">Inscrever-se no Empretec para Startups</button>`;
+}
 
