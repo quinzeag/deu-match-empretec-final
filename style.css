@@ -66,3 +66,69 @@ footer {
     margin: 0 10px;
     font-size: 1.5rem;
 }
+/* Rodapé atualizado para cor rosa escura */
+footer {
+    background-color: #8b007b;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: #ffccff;
+    font-size: 2rem;
+}
+
+footer .social-media a:hover {
+    color: #ffd1dc;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Cor azul claro para as perguntas */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: #e0f7fa;
+    color: #000;
+}
+
+/* Popup com animação de confetes */
+#popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1c1f3a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    animation: popupAnim 0.5s ease;
+}
+
+@keyframes popupAnim {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Animação de confetes */
+@keyframes confetti {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(300px); }
+}
+
+.confetti {
+    position: absolute;
+    width:

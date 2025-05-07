@@ -64,3 +64,44 @@ function calculateScore() {
     document.body.appendChild(popup);
     popup.style.display = "block";
 }
+function createConfetti() {
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        confetti.style.animationDuration = Math.random() * 2 + 2 + "s";
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+            confetti.remove();
+        }, 3000);
+    }
+}
+
+function calculateScore() {
+    let score = 0;
+    for (let i = 0; i < 10; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) score += parseInt(selected.value);
+    }
+
+    let message = "";
+    if (score >= 40) {
+        message = "Parabéns! Seu perfil é altamente compatível com o Empretec para Startups!";
+    } else if (score >= 20) {
+        message = "Você está no caminho certo! O Empretec pode ajudar a consolidar!";
+    } else {
+        message = "Perfil em desenvolvimento. O Empretec pode ajudar a avançar!";
+    }
+
+    const popup = document.createElement("div");
+    popup.id = "popup";
+    popup.innerHTML = `
+        <p>${message}</p>
+        <button onclick="window.location.href='https://www.sebrae.com.br'">Inscrever-se no Empretec Startup</button>`;
+    document.body.appendChild(popup);
+    popup.style.display = "block";
+
+    createConfetti();
+}
