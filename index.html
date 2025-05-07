@@ -11,26 +11,35 @@
 </head>
 
 <body>
- <main>
-        <section class="quiz" id="quiz">
-            <h2><strong>Venha descobrir se o Empretec para Startup é para você.</strong></h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nº</th>
-                        <th>Pergunta</th>
-                        <th>Match</th>
-                        <th>Quase Match</th>
-                        <th>No Match</th>
-                    </tr>
-                </thead>
-                <tbody id="question-list"></tbody>
-            </table>
-            <button onclick="calculateScore()">CALCULAR</button>
-            <div id="result"></div>
-        </section>
-    </main>
-    
+    <header>
+            <div class="logo-container">
+                <img src="./assets/logo.png" alt="Logo" class="logo-img">
+                <img src="./assets/deumatch.png" alt="Deu Match" class="logo-img">
+                <button id="inscreva-se" onclick="window.location.href='https://sebrae.com.br/sites/PortalSebrae/ufs/pb?codUf=16'">Inscreva-se</button>
+            </div>
+        </div>
+    </header>
+
+  <main>
+    <section class="quiz" id="quiz">
+        <h2><strong>Venha descobrir se o Empretec para Startup é para você.</strong></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Pergunta</th>
+                    <th>Match</th>
+                    <th>Quase Match</th>
+                    <th>No Match</th>
+                </tr>
+            </thead>
+            <tbody id="question-list"></tbody>
+        </table>
+        <button onclick="calculateScore()">CALCULAR</button>
+        <div id="result"></div>
+    </section>
+</main>
+
 
     <footer>
         <div class="footer-content">
