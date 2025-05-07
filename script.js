@@ -12,12 +12,12 @@ function calculateScore() {
 
     let message = "";
     if (score <= 4) {
-        message = "Seu perfil está em desenvolvimento. O Empretec pode te ajudar a avançar!";
+        message = "Perfil em desenvolvimento. O Empretec pode ajudar a avançar!";
     } else if (score <= 6) {
-        message = "Você está no caminho certo! O Empretec pode te ajudar a consolidar!";
+        message = "Você está no caminho certo! O Empretec pode ajudar a consolidar!";
     } else {
         message = "Parabéns! Seu perfil é altamente compatível com o Empretec!";
     }
 
-    document.getElementById("result").textContent = "Resultado: " + message;
+    document.getElementById("result").innerHTML = `Resultado: <strong>${message}</strong>`;
 }
